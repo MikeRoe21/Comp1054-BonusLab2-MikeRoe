@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Module 11 - Forms</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- STEP 1: Attach the Bootstrap CSS and JS via a Content Distribution Network (CDN) (http://v4-alpha.getbootstrap.com/) -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<h1>Designing Forms</h1>
+		<!-- STEP 2: To leverage the Bootstrap form control styles, add the form-control class to the following input elements: text, search, email, url, tel, password, number, date (Bootstrap applies display: block and width: 100%) - adjust width of FORM element to see -->
+		<form style="width: 75%; margin: 0 auto;">
+			<div class="form-group">
+				<label for="text1">Name</label>
+				<input type="text" id="text1" class="form-control" />
+		</div><!-- .form-group -->
+
+		<div class="form-group">
+				<label for="search1">Search</label>
+				<input type="search" id="search1" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="email1">Email</label>
+				<input type="email" id="email1" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="tel1">Tel</label>
+				<input type="tel" id="tel1" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="url1">URL</label>
+				<input type="url" id="url1" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="password1">Password</label>
+				<input type="password" id="password1" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="number1">Number</label>
+				<input type="number" id="number1" class="form-control" />
+			</div>
+
+			<div class="form-group">
+				<label for="date1">Date</label>
+				<input type="date" id="date1" class="form-control" />
+			</div>
+
+			<button type="reset" class="btn btn-danger">Reset</button>
+			<button type="submit" class="btn btn-primary">Submit</button>
+
+		</form>
+		<!-- STEP 3: Add suitable labels for each of the above form inputs -->
+
+		<!-- STEP 4: Surround each label and input with a sectioning element (DIV is fine in this case), observing how Bootstrap visually groups the pair with a margin-bottom -->
+
+		<!-- STEP 5: Contruct an inline form consisting of a username, password, "Remember me" checkbox, and submit button - Add a class form-inline to the FORM element  -->
+		<h2>Inline Form</h2>
+		<form style="width: 75%; margin: 0 auto;" class="form-inline">
+			<label for="username" class="sr-only">Username</label>
+			<input type="text" class="form-control" id="username" placeholder="Username"/>
+			<label for="password2" class="sr-only">Password</label>
+			<input type="password" class="form-control" id="password2" placeholder="Password"/>
+			<label for="remember">
+				<input class="form-check-input" type="checkbox" id="remember"> Remember Me
+			</label>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<!-- STEP 6: Style the buttons consistently across platforms with the class 'btn', and if it is the primary submit button, then add another class, 'btn-primary' -->
+		<div class="custom-controls-stacked">
+		<label for="check2" class="custom-control custom-checkbox">
+			<input id="check2" type="checkbox" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Custom Checkbox</span>
+		</label>
+
+		<label for="radio" class="custom-control custom-radio">
+			<input id="radio" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Custom Checkbox</span>
+		</label>
+	</div><!-- .custom-controls-stacked -->
+		<!-- STEP 7: Make checkboxes and radio buttons look and behave consistently across platforms with a variety of 'custom-control' classes and two extra span elements -->
+
+		<!-- STEP 8: Add a parent element (DIV is fine) with class 'custom-controls-stacked' to arrange the checkboxes/radio buttons vertically - the default is horizontal -->
+
+		<!-- STEP 9: Custom styles for SELECT elements entails adding a 'custom-select' class to the start tag -->
+		<select class="custom-select form-control-lg">
+			<option selected>Pick one.</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<!-- STEP 10: Size controls by adding a class, either 'form-control-lg' or 'form-control-sm' -->
+
+	</body>
+</html>
